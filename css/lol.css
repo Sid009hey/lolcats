@@ -1,0 +1,27 @@
+*{
+  font-family: Roboto Mono;
+}
+
+.catphotos{
+  position: absolute;
+  top: 22%;
+  left: 5%;
+}
+
+.title{
+  position: absolute;
+  top :10;
+  left :60px;
+  
+}
+
+.title h1{
+  color: #fff;
+  font-size: 36px;
+  
+}
+
+img{
+  height: 200px;
+  width: 300px;
+}
