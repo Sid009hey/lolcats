@@ -1,17 +1,7 @@
-const url = "https://source.unsplash.com/collection/139386/300x200/?sig=";
-const images = document.querySelectorAll("img");
+document.getElementById("button").innerHTML =
+  localStorage["text"] || "Enter Username"; // default text
 
-const randomNum = () => {
-  return Math.floor(Math.random() * 1000);
-};
-
-function shufflePics() {
-  for (let att of images) {
-    att.src = `${url}${randomNum()}`;
-    {
-      console.log(att.src);
-    }
-  }
-}
-
-document.querySelector("button").addEventListener("click", shufflePics);
+setInterval(function() {
+  // fuction that is saving the innerHTML of the div
+  localStorage["text"] = document.getElementById("content").innerHTML; // content div
+}, 1000);
